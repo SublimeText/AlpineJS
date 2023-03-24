@@ -1,0 +1,52 @@
+%YAML 1.2
+---
+# https://alpinejs.dev/
+# https://www.sublimetext.com/docs/syntax.html
+name: PHP (AlpineJS)
+scope: text.html.alpinejs
+version: 2
+
+extends: Packages/PHP/PHP.sublime-syntax
+
+variables:
+  alpinejs_attributes: |-
+    (?x: x-(?: data | init | bind | on | text | html | model | modelable | show
+    | for | transition | effect | ignore | ref | cloak | teleport | if | id ) )
+
+contexts:
+
+  tag-attributes:
+    - meta_prepend: true
+    - include: tag-alpinejs-attributes
+
+  tag-alpinejs-attributes:
+    # :attr = shorthand syntax for x-bind:attribute="..."
+    # @event = shorthand syntax for x-on:event="..."
+    - match: '[:@]'
+      scope: punctuation.definition.attribute.alpinejs.html
+      push:
+        - tag-alpinejs-attribute-meta
+        - tag-event-attribute-assignment
+        - tag-alpinejs-attribute-name
+
+    - match: '{{alpinejs_attributes}}'
+      scope: entity.other.attribute-name.alpinejs.html
+      push:
+        - tag-alpinejs-attribute-meta
+        - tag-event-attribute-assignment
+
+  tag-alpinejs-attribute-meta:
+    - meta_include_prototype: false
+    - meta_scope: meta.attribute-with-value.alpinejs.html
+    - include: immediately-pop
+
+  tag-alpinejs-attribute-name:
+    - meta_scope: entity.other.attribute-name.alpinejs.html
+    - match: '{{attribute_name_break}}'
+      pop: 1
+    - match: '["''`<]'
+      scope: invalid.illegal.attribute-name.alpinejs.html
+    - match: ':'
+      scope: punctuation.definition.attribute.alpinejs.html
+    - match: \.
+      scope: punctuation.separator.namespace.alpinejs.html
