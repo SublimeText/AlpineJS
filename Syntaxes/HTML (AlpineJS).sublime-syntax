@@ -29,7 +29,7 @@ contexts:
         - tag-event-attribute-assignment
         - tag-alpinejs-attribute-name
 
-    - match: '{{alpinejs_attributes}}'
+    - match: 'x-[\w-]+'
       scope: entity.other.attribute-name.alpinejs.html
       push:
         - tag-alpinejs-attribute-meta
