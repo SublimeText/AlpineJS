@@ -8,11 +8,6 @@ version: 2
 
 extends: Packages/HTML/HTML.sublime-syntax
 
-variables:
-  alpinejs_attributes: |-
-    (?x: x-(?: data | init | bind | on | text | html | model | modelable | show
-    | for | transition | effect | ignore | ref | cloak | teleport | if | id ) )
-
 contexts:
 
   tag-attributes:
@@ -29,7 +24,7 @@ contexts:
         - tag-event-attribute-assignment
         - tag-alpinejs-attribute-name
 
-    - match: '{{alpinejs_attributes}}'
+    - match: 'x-[\w-]+'
       scope: entity.other.attribute-name.alpinejs.html
       push:
         - tag-alpinejs-attribute-meta
