@@ -26,7 +26,7 @@ The easiest way to install is using [Package Control](https://packagecontrol.io)
 
 ## Requirements
 
-- requires Sublime Text 4126+
+- requires Sublime Text 4143+
 
 ## Laravel Blade
 
