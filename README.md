@@ -43,7 +43,7 @@ scope: text.html.blade.alpinejs
 version: 2
 
 extends:
-  - Packages/Laravel Blade/Syntaxes/HTML (Blade).sublime-syntax
+  - Packages/Laravel Blade Highlighter/Syntaxes/HTML (Blade).sublime-syntax
   - Packages/AlpineJS/Syntaxes/PHP (AlpineJS).sublime-syntax
 ```
 
