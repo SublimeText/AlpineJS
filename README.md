@@ -46,3 +46,22 @@ extends:
   - Packages/Laravel Blade/Syntaxes/HTML (Blade).sublime-syntax
   - Packages/AlpineJS/Syntaxes/PHP (AlpineJS).sublime-syntax
 ```
+
+## Elixir HEEx
+
+AlpineJS can be combined with [ElixirSyntax](https://packagecontrol.io/packages/ElixirSyntax).
+
+Just create a _HTML (HEEx, AlpineJS).sublime-syntax_ with following content in your _User_ package.
+
+```yaml
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/syntax.html
+name: HTML (HEEx, AlpineJS)
+scope: text.html.heex.alpinejs
+version: 2
+
+extends:
+  - Packages/ElixirSyntax/syntaxes/HTML (HEEx).sublime-syntax
+  - Packages/AlpineJS/Syntaxes/HTML (AlpineJS).sublime-syntax
+```
