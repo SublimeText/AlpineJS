@@ -43,8 +43,8 @@ scope: text.html.blade.alpinejs
 version: 2
 
 extends:
-  - Packages/Laravel Blade Highlighter/Syntaxes/HTML (Blade).sublime-syntax
   - Packages/AlpineJS/Syntaxes/PHP (AlpineJS).sublime-syntax
+  - Packages/Laravel Blade Highlighter/Syntaxes/HTML (Blade).sublime-syntax
 ```
 
 ## Elixir HEEx
@@ -62,6 +62,6 @@ scope: text.html.heex.alpinejs
 version: 2
 
 extends:
-  - Packages/ElixirSyntax/syntaxes/HTML (HEEx).sublime-syntax
   - Packages/AlpineJS/Syntaxes/HTML (AlpineJS).sublime-syntax
+  - Packages/ElixirSyntax/syntaxes/HTML (HEEx).sublime-syntax
 ```
