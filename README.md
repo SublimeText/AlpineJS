@@ -28,6 +28,25 @@ The easiest way to install is using [Package Control](https://packagecontrol.io)
 
 - requires Sublime Text 4143+
 
+## Astro
+
+AlpineJS can be combined with [Astro](https://packagecontrol.io/packages/Astro).
+
+Just create a _HTML (Astro, AlpineJS).sublime-syntax_ with following content in your _User_ package.
+
+```yaml
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/syntax.html
+name: HTML (Astro, AlpineJS)
+scope: text.html.Astro.alpinejs
+version: 2
+
+extends:
+  - Packages/AlpineJS/Syntaxes/HTML (AlpineJS).sublime-syntax
+  - Packages/Astro/Syntaxes/HTML (Astro).sublime-syntax
+```
+
 ## Laravel Blade
 
 AlpineJS can be combined with [Laravel Blade Highlighter v2.0.0+](https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter).
