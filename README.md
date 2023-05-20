@@ -18,7 +18,7 @@ The easiest way to install is using [Package Control](https://packagecontrol.io)
 1. Download appropriate [AlpineJS.sublime-package](https://github.com/SublimeText/AlpineJS/releases) for your Sublime Text build.
 2. Rename it to _AlpineJS.sublime-package_
 3. Copy it into _Installed Packages_ directory
-   
+
 > To find _Installed Packages_...
 >
 > 1. call _Menu > Preferences > Browse Packages.._
@@ -84,3 +84,15 @@ extends:
   - Packages/AlpineJS/Syntaxes/HTML (AlpineJS).sublime-syntax
   - Packages/ElixirSyntax/syntaxes/HTML (HEEx).sublime-syntax
 ```
+
+## Troubleshooting
+
+AlpineJS extends Sublime Text's HTML syntax definitions.
+
+If AlpineJS syntax highlighting doesn't work and console displays syntax errors in e.g. _HTML (AlpineJS).sublime-syntax_, please make sure to remove any out-dated syntax override.
+
+Steps:
+
+1. call _Menu > Preferences > Browse Packages.._
+2. Look for _HTML_ or _PHP_ folders
+3. Remove them or at least delete any syntax definition in them.
