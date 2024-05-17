@@ -25,8 +25,8 @@
 <div x-init="console.log('I\'m being <?php echo 'initialized!'; ?>')"></div>
 --   ^^^^^^^ meta.tag meta.attribute-with-value.alpinejs.html - meta.string
 --          ^ meta.tag meta.attribute-with-value.alpinejs.html meta.string.html string.quoted.double.html punctuation.definition.string.begin.html
---           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.tag meta.attribute-with-value.alpinejs.html meta.string.html meta.interpolation.html source.js.embedded.html meta.function-call
---                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.function-call.method.js meta.group.js meta.string.js meta.embedded.php
+--           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.tag meta.attribute-with-value.alpinejs.html meta.string.html meta.interpolation.html source.js.embedded.html
+--                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.function-call meta.group.js meta.string.js meta.embedded.php
 --                                                                  ^ meta.tag meta.attribute-with-value.alpinejs.html meta.string.html string.quoted.double.html punctuation.definition.string.end.html
 
 <div x-show="open">Dropdown Contents...</div>
@@ -62,7 +62,7 @@
 --                ^ punctuation.separator.key-value.html
 --                 ^^^^^^^^^^^^^^^^^^^^^^^ meta.string.html
 --                 ^ string.quoted.double.html punctuation.definition.string.begin.html
---                  ^^^^^^^^^^^^^^^^^^^^^ source.js.embedded.html meta.function-call.js
+--                  ^^^^^^^^^^^^^^^^^^^^^ source.js.embedded.html meta.function-call
 --                                       ^ string.quoted.double.html punctuation.definition.string.end.html
 
 <button x-on:click.prevent="alert('Hello World!')">Say Hi</button>
@@ -71,7 +71,7 @@
 --                        ^ punctuation.separator.key-value.html
 --                         ^^^^^^^^^^^^^^^^^^^^^^^ meta.string.html
 --                         ^ string.quoted.double.html punctuation.definition.string.begin.html
---                          ^^^^^^^^^^^^^^^^^^^^^ source.js.embedded.html meta.function-call.js
+--                          ^^^^^^^^^^^^^^^^^^^^^ source.js.embedded.html meta.function-call
 --                                               ^ string.quoted.double.html punctuation.definition.string.end.html
 
 <button @click="alert('Hello World!')">Say Hi</button>
@@ -80,7 +80,7 @@
 --            ^ punctuation.separator.key-value.html
 --             ^^^^^^^^^^^^^^^^^^^^^^^ meta.string.html
 --             ^ string.quoted.double.html punctuation.definition.string.begin.html
---              ^^^^^^^^^^^^^^^^^^^^^ source.js.embedded.html meta.function-call.js
+--              ^^^^^^^^^^^^^^^^^^^^^ source.js.embedded.html meta.function-call
 --                                   ^ string.quoted.double.html punctuation.definition.string.end.html
 
 <div x-data="{ username: 'calebporzio' }">
