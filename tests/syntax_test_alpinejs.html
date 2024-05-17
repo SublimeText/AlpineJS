@@ -64,6 +64,15 @@
 --                  ^^^^^^^^^^^^^^^^^^^^^ source.js.embedded.html meta.function-call.js
 --                                       ^ string.quoted.double.html punctuation.definition.string.end.html
 
+<button x-on:click.prevent="alert('Hello World!')">Say Hi</button>
+--      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.attribute-with-value.alpinejs.html
+--      ^^^^^^^^^^^^^^^^^^ entity.other.attribute-name.alpinejs.html
+--                        ^ punctuation.separator.key-value.html
+--                         ^^^^^^^^^^^^^^^^^^^^^^^ meta.string.html
+--                         ^ string.quoted.double.html punctuation.definition.string.begin.html
+--                          ^^^^^^^^^^^^^^^^^^^^^ source.js.embedded.html meta.function-call.js
+--                                               ^ string.quoted.double.html punctuation.definition.string.end.html
+
 <button @click="alert('Hello World!')">Say Hi</button>
 --      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.attribute-with-value.alpinejs.html
 --      ^^^^^^ entity.other.attribute-name.alpinejs.html
