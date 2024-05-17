@@ -24,7 +24,7 @@ contexts:
         - tag-event-attribute-assignment
         - tag-alpinejs-attribute-name
 
-    - match: 'x-[\w-]+'
+    - match: 'x-[\w-]+(\.\w+)*'
       scope: entity.other.attribute-name.alpinejs.html
       push:
         - tag-alpinejs-attribute-meta
