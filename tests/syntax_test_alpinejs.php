@@ -25,7 +25,7 @@
 <div x-init="console.log('I\'m being <?php echo 'initialized!'; ?>')"></div>
 --   ^^^^^^^ meta.tag meta.attribute-with-value.alpinejs.html - meta.string
 --          ^ meta.tag meta.attribute-with-value.alpinejs.html meta.string.html string.quoted.double.html punctuation.definition.string.begin.html
---           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.tag meta.attribute-with-value.alpinejs.html meta.string.html meta.interpolation.html source.js.embedded.html
+--           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.tag meta.attribute-with-value.alpinejs.html meta.string.html source.js.embedded.html
 --                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.function-call meta.group.js meta.string.js meta.embedded.php
 --                                                                  ^ meta.tag meta.attribute-with-value.alpinejs.html meta.string.html string.quoted.double.html punctuation.definition.string.end.html
 
