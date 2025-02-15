@@ -19,6 +19,7 @@ The easiest way to install is using [Package Control](https://packagecontrol.io)
 2. Rename it to _AlpineJS.sublime-package_
 3. Copy it into _Installed Packages_ directory
 
+> [!NOTE]
 > To find _Installed Packages_...
 >
 > 1. call _Menu > Preferences > Browse Packages.._
@@ -49,7 +50,7 @@ extends:
 
 ## Laravel Blade
 
-AlpineJS can be combined with [Laravel Blade Highlighter v2.0.0+](https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter).
+AlpineJS can be combined with [Laravel Blade v2.0.0+](https://packagecontrol.io/packages/Laravel%20Blade).
 
 Just create a _HTML (Blade, AlpineJS).sublime-syntax_ with following content in your _User_ package.
 
@@ -63,7 +64,7 @@ version: 2
 
 extends:
   - Packages/AlpineJS/Syntaxes/PHP (AlpineJS).sublime-syntax
-  - Packages/Laravel Blade Highlighter/Syntaxes/HTML (Blade).sublime-syntax
+  - Packages/Laravel Blade/Syntaxes/HTML (Blade).sublime-syntax
 ```
 
 ## Elixir HEEx
