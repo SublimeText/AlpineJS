@@ -12,14 +12,9 @@
 --   ^^^^^^ entity.other.attribute-name.alpinejs.html
 --         ^ punctuation.separator.key-value.html
 --          ^ string.quoted.double.html punctuation.definition.string.begin.html
---           ^^^^^^^^^^^^^^^^^^^^ source.js.embedded.html meta.block.js - string
---           ^ punctuation.section.block.begin.js
---             ^^^^ entity.name.label.js
---                 ^ punctuation.separator.js
---                   ^^ punctuation.section.block.begin.js
---                      ^^^^ variable.other.dollar.js
---                           ^^ punctuation.section.block.end.js
---                              ^ punctuation.section.block.end.js
+--           ^^^^^^^^^^^^^^^^^^^^ source.js.embedded.html meta.block - string, source.js.embedded.html meta.mapping - string
+--           ^ punctuation.section.block.begin.js, punctuation.section.mapping.begin.js
+--                              ^ punctuation.section.block.end.js, punctuation.section.mapping.end.js
 --                                ^ punctuation.definition.tag.end.html
 
 <div x-init="console.log('I\'m being <?php echo 'initialized!'; ?>')"></div>
@@ -106,7 +101,7 @@
 <div x-data='{ username: "<strong>calebporzio</strong>" }'>
     --      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.attribute-with-value.alpinejs.html meta.string.html
     --      ^ string.quoted.single.html punctuation.definition.string.begin.html
-    --       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.js.embedded.html meta.block.js - string.quoted.single
+    --       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.js.embedded.html meta.block - string.quoted.single, source.js.embedded.html meta.mapping - string.quoted.single
     --                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ meta.string.js string.quoted.double.js
     --                                                   ^ string.quoted.single.html punctuation.definition.string.end.html
 
